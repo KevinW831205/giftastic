@@ -49,6 +49,8 @@ var main = {
             main.currentTopic = $(this).text();
             main.imgGenerate(main.currentTopic);
             $("#movieSection").hide();
+            $("#movieHS").text("show [+]")
+            $("#movieHS").attr("data-dispState", "hide");
             omdb.getMovieInfo();
         });
     },
