@@ -1,0 +1,81 @@
+<!--
+    UpennLPS HW6 GifTastic
+    Author: Kevin Wang
+    Date due: 2019/03/02
+-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>GifTastic</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+        integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+</head>
+
+<body>
+    <div id="imageCol">
+
+
+        <div id="displaySection">
+            <div class="sectionBar displayBar">
+                <h2 class="sectionTitle">Results</h2>
+                <button class="hideShowBtn" id="resultHS" data-dispState="show">hide [-]</button>
+
+                <!-- <button class="hideShowBtn" id="dispHS">hide [-]</button> -->
+            </div>
+            <div id="imageDisplay"></div>
+        </div>
+        <div id="favoriteSection">
+            <div class="sectionBar favoriteBar">
+                <h2 class="sectionTitle">Favorites</h2>
+                <button class="hideShowBtn" id="favHS" data-dispState="show">hide [-]</button>
+            </div>
+            <div id="favorites"></div>
+            <!--     <a href = ""download="https://media0.giphy.com/media/JIX9t2j0ZTN9S/giphy-downsized_s.gif"> -->
+            <!-- http://i.dailymail.co.uk/i/pix/2015/09/01/18/2BE1E88B00000578-3218613-image-m-5_1441127035222.jpg -->
+            <!-- <a href="C:\Users\bird8\UpennLPS\UPennlpsRepo\wordGuessGame\assets\images" download="BotW.JPG" > -->
+            <!-- <img src="http://i.dailymail.co.uk/i/pix/2015/09/01/18/2BE1E88B00000578-3218613-image-m-5_1441127035222.jpg"> -->
+            <!-- <i class="fas fa-file-download"></i>
+                </a> -->
+
+        </div>
+
+    </div>
+    <div id="searchSection">
+        <h1>Click a Topic to Find Related GIFs</h1>
+        <h3>Select Number of GIFs to Add
+            <select id="gifNoSelect">
+                <option>1</option>
+                <option>5</option>
+                <option selected="selected">10</option>
+                <option>15</option>
+            </select>
+        </h3>
+
+        <div id="btnDisplay"></div>
+        <form id="searchForm">
+            <input type="text" id="searchInput" placeholder="Add Another Topic to Search">
+            <input type="submit" class="deafultBtn" id="submitBtn" value="Submit">
+        </form>
+    </div>
+
+    <div id="movieSection">
+        <div class="sectionBar movieBar">
+            <h2 class="sectionTitle" id="movieBarTitle">Movie Info</h2>
+            <button class="hideShowBtn" id="movieHS" data-dispState="hide">show [+]</button>
+            <button id="closeBtn"> <i class="fas fa-times" ></i>
+            </button>
+
+        </div>
+        <div id="movieInfoDisplayContainer">
+            <div id="movieInfoDisplay"></div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/app.js"></script>
+</body>

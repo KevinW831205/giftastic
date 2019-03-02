@@ -1,0 +1,366 @@
+/* UpennLPS HW6 GifTastic
+Author: Kevin Wang
+Date due: 2019/03/02 */
+
+body{
+    background-image:url(../images/backgroundimg.png);
+}
+
+h1{
+    font-size: 30px;
+    margin: 10px 0px 10px 0px;
+    font-weight: bold;
+}
+
+h3{
+    font-size: 24px;
+    margin: 10px 0px 10px 0px;
+}
+
+p{
+    padding-bottom: 5px;
+}
+
+.fa-file-download{
+    font-size: 40px;
+    margin-left: 5px;
+    position: relative;
+    top: 5px;
+    left: 30px;    
+}
+
+header{
+    border-style: solid;
+    border-bottom-width: 3px;
+    border-color: red;
+    height:60px;
+    
+}
+
+.errormsg{
+    font-size: 40px;
+}
+
+.imageContainer{
+    display:inline-block;
+    margin:20px 20px 20px 20px;
+}
+
+.deafultBtn{
+    background-color: #4aaaa5;
+    border-radius: 10px;
+    color: white;
+    border-style: none;
+}
+
+.imageCallBtn{
+    font-size: 24px;
+    padding: 5px 20px 5px 20px;
+    margin-right: 20px;
+    margin-bottom: 10px; 
+}
+
+.currentTopicBtn{
+    font-weight: bold;
+    font-size: 30px;
+    background-color: burlywood;
+
+}
+
+#btnDisplay{
+    padding-left:0px;
+}
+
+#imageCol{
+    position: absolute;
+    left:0px;
+    width:60%;
+    top:30px
+}
+
+
+#searchSection{
+    position: fixed;
+    right:30px;
+    top:30px;
+    width:35%;
+    font-size: 24px;
+    height:600px;
+    overflow-y:auto;
+}
+
+#searchInput{
+    height:36px;
+    width:400px;
+    font-size: 24px;
+    border-radius: 10px;
+    /* background-color: rgb(235, 235, 235) */
+}
+
+#submitBtn{
+    height:36px;
+    width:100px;
+    font-size: 24px;
+
+}
+
+#imageDisplay{
+    margin: 20px 20px 20px 20px;
+}
+
+
+
+.rating{
+    margin-top:5px;
+}
+
+.addFavBtn{
+}
+
+.gifImg{
+}
+
+
+
+.sectionTitle{
+    font-size:30px;
+    margin-left:20px;
+    float: left;
+    font-weight: bold;
+    text-overflow: ellipsis;
+    width:400px;
+    display:block;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.hideShowBtn{
+    background-color: inherit;
+    border-style: none;
+    font-size: 24px;
+    /* float: right; */
+    position: absolute;
+    right:0px;
+    margin-right: 20px;
+}
+
+#dispHS{
+    color:white;
+}
+
+#favHS{
+
+}
+
+#favoriteSection{
+    margin:10px 10px 10px 20px;
+}
+
+#displaySection{
+    margin:10px 10px 10px 20px;
+}
+
+
+#movieInfoDisplayContainer{
+    background-color: white;
+    height:200px;
+    border-style: solid;
+    border-width:1px;
+    border-color: black;
+    border-radius: 10px;
+    width:100%;
+    overflow-y: auto;
+
+}
+
+#movieInfoDisplay{
+    font-size: 24px;
+    padding: 10px 20px 0px 20px;
+}
+
+#movieSection{
+    position:fixed;
+    bottom:50px;
+    right:30px;
+    width:35%;
+    display:none;
+}
+
+.SectionBar{
+    width:100%;
+    height:40px;
+    padding-top: 10px;
+    border-radius: 10px;
+}
+
+.displayBar{
+    background-color: #4aaaa5;
+    color:white;
+}
+
+
+.favoriteBar{
+    background-color:gold;
+}
+
+.movieBar{
+    background-color: #4aaaa5;
+    color:white;
+}
+
+#movieBarTitle{
+    overflow: hidden;
+}
+
+
+#moreBtn{
+    font-size: 36px;
+    padding: 10px 30px 10px 30px;
+}
+
+#gifNoSelect{
+    height: 24px;
+    font-size: 18px;
+}
+
+#movieHS{
+    color:white;
+}
+
+#resultHS{
+    color:white;
+}
+
+.rating{
+    font-size: 24px;
+}
+
+.rmvBtn{
+    background-color: red;
+    color:white;
+    border-style: none;
+    font-size:24px;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+.addFavBtn{
+    background-color: gold;
+    border-style: none;
+    font-size:24px;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+}
+
+.favBtnAdded{
+    background-color: none;
+    border-style: none;
+    font-size:24px;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+
+}
+
+#closeBtn{
+    background-color: red;
+    border-style:none;
+    color:white;
+    font-size:36px;
+    width:40px;
+    height:40px;
+    position: absolute;
+    top:-40px;
+    right:0px;
+    border-radius: 10px;
+}
+
+/*768 + 980 */
+@media screen and (max-width:768px){
+
+    .SectionBar{
+        width:100%;
+        height:30px;
+        padding-top: 10px;
+        padding-bottom: 5px;
+        border-radius: 10px;
+    }
+
+    .sectionTitle{
+        font-size: 24px;
+    }
+
+    .hideShowBtn{
+        font-size: 18px;
+    }
+
+    h1{
+        text-align: center
+    }
+
+    #searchCol{
+        position: absolute;
+        left:0px;
+        width:100%;
+        top:10px;
+        padding:30px;
+    }
+
+    #imageCol{
+        position: absolute;
+        left:0px;
+        width:100%;
+        top:200px;
+    }    
+
+    #searchSection{
+        position: fixed;
+        left:0px;
+        padding: 0px 20px 0px 20px;
+        top:0px;
+        width:100%;
+        height: 200px;
+        font-size: 24px;
+        background-color: white;
+        border-bottom-width: 1px;
+        border-bottom-style: solid; 
+        overflow-y:auto;
+    }
+
+    #movieSection{
+        position:fixed;
+        bottom:0px;
+        left: 0px;
+        width:100%;
+    }
+    
+    
+    #searchForm{
+        display:flex;
+        flex-flow: row wrap;
+        width: 100%;
+    }
+
+    #searchInput{
+        height:36px;
+        width:400px;
+        font-size: 24px;
+        border-radius: 10px;
+    }
+
+    #submitBtn{
+        height:36px;
+        width:100px;
+        font-size: 24px;
+    
+    }    
+
+    #imageDisplay{
+        overflow:none;
+        text-align: center;
+    }
+    
+    #favorites{
+        text-align: center;
+    }
+}
+
