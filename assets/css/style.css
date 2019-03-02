@@ -4,17 +4,21 @@ Date due: 2019/03/02 */
 
 body{
     background-image:url(../images/backgroundimg.png);
+    font-family: 'Noto Sans SC', sans-serif;
+
 }
 
 h1{
     font-size: 30px;
     margin: 10px 0px 10px 0px;
     font-weight: bold;
+    text-align: center;
 }
 
 h3{
     font-size: 24px;
     margin: 10px 0px 10px 0px;
+    text-align: center;
 }
 
 p{
@@ -85,8 +89,18 @@ header{
     top:30px;
     width:35%;
     font-size: 24px;
-    height:600px;
+    height: auto;
+    max-height:600px;
+    background-color: white;
     overflow-y:auto;
+    padding-bottom: 10px;
+    border-style: inset;
+    border-width: 2px;
+    border-radius: 10px;
+}
+
+.sectionMargin{
+    margin:5px;
 }
 
 #searchInput{
@@ -277,6 +291,7 @@ header{
 /*768 + 980 */
 @media screen and (max-width:768px){
 
+
     .SectionBar{
         width:100%;
         height:30px;
@@ -293,9 +308,7 @@ header{
         font-size: 18px;
     }
 
-    h1{
-        text-align: center
-    }
+
 
     #searchCol{
         position: absolute;

@@ -10,6 +10,7 @@
     <title>GifTastic</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
         integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Noto+Sans+SC" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 
@@ -45,28 +46,30 @@
 
     </div>
     <div id="searchSection">
-        <h1>Click a Topic to Find Related GIFs</h1>
-        <h3>Select Number of GIFs to Add
-            <select id="gifNoSelect">
-                <option>1</option>
-                <option>5</option>
-                <option selected="selected">10</option>
-                <option>15</option>
-            </select>
-        </h3>
+        <div class="sectionMargin">
+            <h1>Click a Topic to Find Related GIFs</h1>
+            <h3>Select Number of GIFs to Add
+                <select id="gifNoSelect">
+                    <option>1</option>
+                    <option>5</option>
+                    <option selected="selected">10</option>
+                    <option>15</option>
+                </select>
+            </h3>
 
-        <div id="btnDisplay"></div>
-        <form id="searchForm">
-            <input type="text" id="searchInput" placeholder="Add Another Topic to Search">
-            <input type="submit" class="deafultBtn" id="submitBtn" value="Submit">
-        </form>
+            <div id="btnDisplay"></div>
+            <form id="searchForm">
+                <input type="text" id="searchInput" placeholder="Add Another Topic to Search">
+                <input type="submit" class="deafultBtn" id="submitBtn" value="Submit">
+            </form>
+        </div>
     </div>
 
     <div id="movieSection">
         <div class="sectionBar movieBar">
             <h2 class="sectionTitle" id="movieBarTitle">Movie Info</h2>
             <button class="hideShowBtn" id="movieHS" data-dispState="hide">show [+]</button>
-            <button id="closeBtn"> <i class="fas fa-times" ></i>
+            <button id="closeBtn"> <i class="fas fa-times"></i>
             </button>
 
         </div>
