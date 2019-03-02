@@ -296,7 +296,13 @@ header{
 @media screen and (max-width:768px){
 
     .imageContainer{
-        max-width: 90%;
+        margin:none;
+    }
+
+    .gifImg{
+        height:auto;
+        width: 100%;
+        max-width: 500px;
     }
 
     .SectionBar{
@@ -385,6 +391,7 @@ header{
     #imageDisplay{
         overflow:none;
         text-align: center;
+        margin:none;
     }
     
     #favorites{
