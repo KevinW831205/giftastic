@@ -355,14 +355,14 @@ header{
 
     #searchInput{
         height:36px;
-        width:400px;
+        width:75%;
         font-size: 24px;
         border-radius: 10px;
     }
 
     #submitBtn{
         height:36px;
-        width:100px;
+        width:20%;
         font-size: 24px;
     
     }    
