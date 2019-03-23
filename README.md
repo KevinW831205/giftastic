@@ -1,7 +1,10 @@
 # Giftastic
-## Due Date 2019/03/02
 
 An browser app that is able to search for gifs.
+
+The page is also made to be mobile responsive.
+
+##Instructions
 
 User has the option to choose how many gifs are loaded at one time.
 
@@ -15,7 +18,6 @@ User can also load new gifs by clicking the load more gifs at the end of the gif
 
 User also has the option to save the gifs to favorites, which is also local stored so is saved on browser refresh.
 
-The page is also made to be mobile responsive.
 
 
 
