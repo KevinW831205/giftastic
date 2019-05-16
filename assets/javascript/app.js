@@ -2,8 +2,6 @@
 // Author: Kevin Wang
 // Date due: 2019/03/02
 
-//office hour question: on off, download, spam bug
-
 var main = {
     // check arrays for favorite related items
     favorite: [],
