@@ -1,5 +1,7 @@
 # Giftastic
 
+Deployed Site: [https://kevinw831205.github.io/giftastic/](https://kevinw831205.github.io/giftastic/)
+
 An browser app that is able to search for gifs. The page is made to be mobile responsive.
 
 ## Instructions
